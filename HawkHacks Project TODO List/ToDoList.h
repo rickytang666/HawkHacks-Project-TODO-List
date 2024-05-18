@@ -8,11 +8,6 @@
 
 using namespace std;
 
-//Constants
-
-#define STAR "★"
-#define NOMRAL "●"
-
 //Classes
 
 class ToDoList
