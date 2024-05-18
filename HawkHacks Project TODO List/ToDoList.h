@@ -34,6 +34,18 @@ public:
 
 	void addTask();
 
+	// Search for task given a keyword
+
+	void searchTask(const string& input);
+
+	// delete task given a keyword
+
+	void deleteTask();
+
+	// modify task
+
+	void modifyTask();
+
 	// Display all the tasks
 	
 	void displayTasks();
@@ -48,5 +60,6 @@ public:
 
 	// members
 	vector<Task> m_TasksList;
+	vector<vector<Task>::iterator> m_SearchResults;
 
 };
