@@ -257,6 +257,27 @@ void ToDoList::displayTasks()
 
 }
 
+void ToDoList::clearTasks()
+{
+	int confirm = 0;
+	cout << "Are you sure you want to do that? This operation is irreversible" << endl;
+	cout << "Press 1 to confirm and press other to deny:  ";
+	cin >> confirm;
+
+	if (confirm == 1)
+	{
+		if (this->m_TasksList.empty())
+		{
+			cout << "You don't have any tasks!" << endl;
+		}
+		else
+		{
+			this->m_TasksList.clear();
+			cout << "Cleared" << endl;
+		}
+	}
+}
+
 
 void ToDoList::runApp()
 {
@@ -291,7 +312,7 @@ void ToDoList::runApp()
 		}
 		else if (choice == 5)
 		{
-
+			this->clearTasks();
 		}
 		else
 		{

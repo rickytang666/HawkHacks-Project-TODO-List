@@ -54,6 +54,10 @@ public:
 	
 	void updateTasks();
 
+	// claer all the tasks
+
+	void clearTasks();
+
 	// the main function to run the app
 	
 	void runApp();
