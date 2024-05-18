@@ -29,7 +29,13 @@ public:
 
 	bool operator() (const Task& task1, const Task& task2) const
 	{
-        // First, compare based on importance
+        // First, compare based on completion
+        if (task1.m_Completed != task2.m_Completed)
+        {
+            return task1.m_Completed < task2.m_Completed;
+        }
+
+        // then compare based on importance
         if (task1.m_Stared != task2.m_Stared) 
         {
             return task1.m_Stared > task2.m_Stared;  // Starred tasks come first

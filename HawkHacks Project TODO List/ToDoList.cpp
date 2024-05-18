@@ -17,8 +17,9 @@ void ToDoList::showMenu()
 	cout << "Enter 1 to create a new task" << endl;
 	cout << "Enter 2 to delete a task" << endl;
 	cout << "Enter 3 to modify a task" << endl;
-	cout << "Enter 4 to see all your tasks" << endl;
-	cout << "Enter 5 to clear all your tasks" << endl;
+	cout << "Enter 4 to mark a task done" << endl;
+	cout << "Enter 5 to see all your tasks" << endl;
+	cout << "Enter 6 to clear all your tasks" << endl;
 	cout << "Enter other to quit the applet" << endl;
 	cout << "********************************" << endl;
 
@@ -229,6 +230,45 @@ void ToDoList::modifyTask()
 
 
 
+void ToDoList::markDone()
+{
+	string input = "";
+	cout << "Enter the name of the task you want to mark as done: " << endl;
+	cin.ignore();
+	getline(cin, input);
+
+	this->searchTask(input); // searching
+
+	if (!this->m_SearchResults.empty())
+	{
+		for (int i = 0; i < m_SearchResults.size(); ++i)
+		{
+			cout << i + 1 << " : ";
+			m_SearchResults[i]->display_task();
+		}
+
+		cout << endl;
+
+		int choice = 0;
+
+		cout << "Which task would you like to mark as done?  ";
+
+		cin >> choice;
+
+		if (choice <= 0 || choice > m_SearchResults.size())
+		{
+			cout << "Operation failed because of invalid input" << endl;
+		}
+		else
+		{
+			// Mark the selected task as done
+			(*m_SearchResults[choice - 1]).m_Completed = true;
+			cout << "Success" << endl;
+		}
+	}
+}
+
+
 
 void ToDoList::updateTasks()
 {
@@ -308,9 +348,13 @@ void ToDoList::runApp()
 		}
 		else if (choice == 4)
 		{
-			this->displayTasks();
+			this->markDone();
 		}
 		else if (choice == 5)
+		{
+			this->displayTasks();
+		}
+		else if (choice == 6)
 		{
 			this->clearTasks();
 		}

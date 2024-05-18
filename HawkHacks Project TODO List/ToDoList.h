@@ -46,6 +46,10 @@ public:
 
 	void modifyTask();
 
+	// mark a task done
+
+	void markDone();
+
 	// Display all the tasks
 	
 	void displayTasks();
