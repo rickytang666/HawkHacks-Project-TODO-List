@@ -3,6 +3,10 @@
 // include the necessary libraries
 
 #include<iostream>
+#include<vector>
+#include<algorithm>
+#include "Task.h"
+#include "CompareTasks.cpp"
 
 //namespace
 
@@ -25,5 +29,24 @@ public:
 	// the function for showing menu to user
 
 	void showMenu();
+
+	// Adding a task
+
+	void addTask();
+
+	// Display all the tasks
+	
+	void displayTasks();
+
+	// Update the tasks (Sorting them)
+	
+	void updateTasks();
+
+	// the main function to run the app
+	
+	void runApp();
+
+	// members
+	vector<Task> m_TasksList;
 
 };

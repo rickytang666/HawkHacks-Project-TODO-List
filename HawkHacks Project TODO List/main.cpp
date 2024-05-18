@@ -17,7 +17,7 @@ int main()
 	// Create an instance of ToDoList class
 	ToDoList tdl;
 
-	tdl.showMenu();
+	tdl.runApp();
 
 	system("pause");
 	return 0;

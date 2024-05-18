@@ -3,6 +3,8 @@
 // include necessary libraries and packages
 #include<iostream>
 #include<string>
+#include<vector>
+#include<sstream>
 
 // namespace
 

@@ -29,5 +29,5 @@ string Task::get_importance()
 
 void Task::display_task()
 {
-
+    cout << get_importance() << "Task: " << this->m_Name << "     Due: " << this->m_DueDate << endl;
 }
