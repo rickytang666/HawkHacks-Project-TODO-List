@@ -4,19 +4,20 @@ Date: 2024/05/17
 HawkHacks 2024
 */
 
+// include the necessary libraries and packages
 
 #include<iostream>
-#include<vector>
-#include<map>
-#include<algorithm>
+
+#include "ToDoList.h"
 
 using namespace std;
 
-
-
 int main()
 {
-	cout << "Hello Ricky" << endl;
+	// Create an instance of ToDoList class
+	ToDoList tdl;
+
+	tdl.showMenu();
 
 	system("pause");
 	return 0;

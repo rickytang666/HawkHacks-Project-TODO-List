@@ -3,10 +3,6 @@
 // include the necessary libraries
 
 #include<iostream>
-#include<string>
-#include<vector>
-#include<algorithm>
-#include<map>
 
 //namespace
 
@@ -22,5 +18,17 @@ using namespace std;
 class ToDoList
 {
 public:
+
+	//constructor
+
+	ToDoList();
+
+	//destructor
+
+	~ToDoList();
+
+	// the function for showing menu to user
+
+	void showMenu();
 
 };
