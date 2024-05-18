@@ -12,19 +12,26 @@ ToDoList::~ToDoList()
 
 void ToDoList::showMenu()
 {
-	cout << "********************************" << endl;
-	cout << "Welcome to my To-do List!" << endl;
-	cout << "Enter 1 to create a new task" << endl;
-	cout << "Enter 2 to delete a task" << endl;
-	cout << "Enter 3 to modify a task" << endl;
-	cout << "Enter 4 to mark a task done" << endl;
-	cout << "Enter 5 to see all your tasks" << endl;
-	cout << "Enter 6 to clear all your tasks" << endl;
-	cout << "Enter other to quit the applet" << endl;
-	cout << "********************************" << endl;
-
-	cout << endl; //For seperation
+	cout << "\n\n";
+	cout << "********************************************\n";
+	cout << "*                                          *\n";
+	cout << "*         Welcome to my To-do List!        *\n";
+	cout << "*                                          *\n";
+	cout << "********************************************\n";
+	cout << "\n";
+	cout << "Please select an option from the menu below:\n";
+	cout << "\n";
+	cout << "1. Create a new task\n";
+	cout << "2. Delete a task\n";
+	cout << "3. Modify a task\n";
+	cout << "4. Mark a task as done\n";
+	cout << "5. View all tasks\n";
+	cout << "6. Clear all tasks\n";
+	cout << "7. Quit the application\n";
+	cout << "\n";
+	
 }
+
 
 void ToDoList::addTask()
 {
@@ -62,19 +69,20 @@ void ToDoList::addTask()
 		cin >> day;
 
 		// Check if the inputs are valid
-		if (cin.fail() || year < 0 || month < 1 || month > 12 || day < 1 || day > 31)
-		{
-			cin.clear(); // clear the error state of cin
-			cin.ignore(numeric_limits<streamsize>::max(), '\n'); // ignore the rest of the line
-			cout << "Invalid input. Setting due date to 'No due date'.\n";
-			this->m_TasksList.push_back(Task(name, star_choice));
-		}
-		else
+		CheckDateValidity myCheck;
+
+		if (myCheck(year, month, day))
 		{
 			string duedate = to_string(year) + "-" + to_string(month) + "-" + to_string(day);
 			this->m_TasksList.push_back(Task(name, star_choice, duedate));
 			cout << "Success" << endl;
 		}
+		else
+		{
+			cout << "Invalid date input" << endl;
+			this->m_TasksList.push_back(Task(name, star_choice));
+		}
+
 	}
 	
 }
