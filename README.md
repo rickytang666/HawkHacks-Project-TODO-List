@@ -8,15 +8,15 @@ This is a great console-based to-do list I made. You can record tasks you want y
 
 ### 1.2 Technologies I used
 
-Coding Language: ==**C++**==
+Coding Language: **C++**
 
 - I used this language because this is the primary language for myself. Also, this language is pretty fast and works well with console-based programs.
 
-Development platform I used: **==Microsoft Visual Studio Community 2022==**
+Development platform I used: **Microsoft Visual Studio Community 2022**
 
 - This is a great IDE. The code editor is my favorite, and I have been using it since I first encounter computer science.
 
-Source Control: **==Git & GitHub==**
+Source Control: **Git & GitHub**
 
 - These tools make me manage my project very well. They give me chances to "regret" and modify my errors.
 
