@@ -47,6 +47,3 @@ Created this applet on May 17th, 2024 \
 All Rights Reserved \
 LinkedIn: [Ruiqi Tang](https://www.linkedin.com/in/ruiqi-tang-04a16a2a2/) \
 GitHub Profile: [rickytang666](https://github.com/rickytang666)
-
-## License
-MIT
