@@ -6,6 +6,23 @@ public:
 
     bool compareDates(const string& d1, const string& d2) const
     {
+
+        if (d1 == "No due date" && d2 != "No due date") 
+        {
+            // d1 is less urgent than d2
+            return false;
+        }
+        else if (d1 != "No due date" && d2 == "No due date") 
+        {
+            // d1 is more urgent than d2
+            return true;
+        }
+        else if (d1 == "No due date" && d2 == "No due date") 
+        {
+            // Both tasks have no due date, so they are equally urgent
+            return false;
+        }
+
         
         // Split the dates by "-"
         stringstream ss1(d1);

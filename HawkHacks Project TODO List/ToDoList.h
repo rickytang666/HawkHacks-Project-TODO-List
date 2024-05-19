@@ -4,6 +4,7 @@
 
 #include<iostream>
 #include<vector>
+#include<string>
 #include<algorithm>
 #include "Task.h"
 #include "CompareTasks.cpp"
