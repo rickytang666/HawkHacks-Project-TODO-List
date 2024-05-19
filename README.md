@@ -24,29 +24,29 @@ Source Control: **Git & GitHub**
 
 When checking the date validity of the users' inputs, I used string manipulations for my approaches. But that method caused many errors, so then after almost a day, I changed my algorithm to checking using math and that method was significantly better.
 
-### 1.4 Features I hope to add on in future
+### 1.4 Features I hope to add in future
 
-- I hope to add databases or files to store the data, so that the tasks will remain there even if the applet is closed
+- I hope to add databases or files to store the data so that the tasks will remain there even if the applet is closed
 - I want to let the tasks have subtasks, which are the steps to complete a single task
-- I want to add collaboration functions, so that users can keep their data on the cloud drive and they can share the tasks. This is especially good for a hackathon, a science project, and so on.
+- I want to add collaboration functions so that users can keep their data on the cloud drive and they can share the tasks. This is especially good for a hackathon, a science project, and so on.
 - Add reminder functions. This could be done by using libraries to hold the dates and times calculations.
 
 ## 2. How to run the applet
 
-The easiest way to do so is downloading the application file via the following path: HawkHacks Project TODO List/x64/Debug/HawkHacks Project TODO List.exe
+The easiest way to do so is by downloading the application file via the following path: HawkHacks Project TODO List/x64/Debug/HawkHacks Project TODO List.exe
 
 Then, run the application on the computer, and enjoy!
 
 ## 3. How to use the applet
 
-- Open the application, and you can see a control menu. You have to accomplish each operation by entering the according number
-- You need to at least create one task to make any other operations possible
+- Open the application, and you can see a control menu. You have to accomplish each operation by entering the appropriate number
+- You need to create at least one task to make any other operations possible
   - when creating a task, be careful with the data entry or you will not be able to create one
-- A normal task has bullet sign while an important task (starred task) has a start sign
+- A normal task has a bullet sign while an important task (starred task) has a star sign
 - If you don't like a task, you can modify it; and if you think it's totally useless, you can delete it
 - Every time you complete your task, you can mark it as done. Then, the task's status sign will change from cross to checkmark.
 - The tasks inside the program are sorted from most important and most urgent to least important to least urgent.
-- You can filter out all the starred tasks or filter our all the tasks with due dates.
+- You can filter out all the starred tasks or all the tasks with due dates.
 
 ## 4. Credits
 
