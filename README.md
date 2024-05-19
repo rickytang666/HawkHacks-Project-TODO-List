@@ -1,7 +1,9 @@
-# RicFinity To-Do List Applet
-A console-based to-do list application built with C++.
+# ✅ RicFinity To-Do List Applet
+> A console-based to-do list application built with C++.
 
-## Table of Contents
+
+
+## 📚 Table of Contents
 1. Description
     - What does it do?
     - Technologies Used
@@ -13,7 +15,7 @@ A console-based to-do list application built with C++.
 5. Credits
 6. License
 
-## Description
+## 📝 Description
 
 ### What does it do?
 This application allows users to record tasks they want to complete. Users can set the importance and due date for every task. The application also provides options for modifying and deleting tasks.
@@ -32,18 +34,21 @@ One of the main challenges was validating the date inputs from users. Initially,
 - Add collaboration functions for sharing tasks.
 - Add reminder functions using libraries to handle date and time calculations.
 
-## Installation
+## 💾 Installation
 The easiest way to run the application is by downloading the executable file via the following path: HawkHacks Project TODO List/x64/Debug/HawkHacks Project TODO List.exe
 
-## Usage
+## 🎮 Usage
 Open the application to see a control menu. Each operation can be accomplished by entering the appropriate number. You need to create at least one task to make any other operations possible. When creating a task, be careful with the data entry or you will not be able to create one.
 
-## Contributing
+## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a pull request or create an issue.
 
-## Credits
+## 👤 Credits
 Author: Ruiqi (Ricky) Tang (he/him) \
 Created this applet on May 17th, 2024 \
 All Rights Reserved \
 LinkedIn: [Ruiqi Tang](https://www.linkedin.com/in/ruiqi-tang-04a16a2a2/) \
 GitHub Profile: [rickytang666](https://github.com/rickytang666)
+
+## 📑 License
+This project is MIT licensed.
