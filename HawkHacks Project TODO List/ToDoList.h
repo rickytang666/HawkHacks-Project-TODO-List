@@ -55,11 +55,14 @@ public:
 	
 	void displayTasks();
 
+	// filter out certain types of tasks
+	void filterTasks();
+
 	// Update the tasks (Sorting them)
 	
 	void updateTasks();
 
-	// claer all the tasks
+	// clear all the tasks
 
 	void clearTasks();
 

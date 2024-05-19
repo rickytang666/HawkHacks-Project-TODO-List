@@ -28,8 +28,9 @@ void ToDoList::showMenu()
 	cout << "3. Modify a task\n";
 	cout << "4. Mark a task as done\n";
 	cout << "5. View all tasks\n";
-	cout << "6. Clear all tasks\n";
-	cout << "7. Quit the application\n";
+	cout << "6. Filter tasks\n";
+	cout << "7. Clear all tasks\n";
+	cout << "Other. Quit the application\n";
 	cout << "\n";
 	
 }
@@ -151,7 +152,6 @@ void ToDoList::deleteTask()
 }
 
 
-
 void ToDoList::modifyTask()
 {
 	string input = "";
@@ -240,7 +240,6 @@ void ToDoList::modifyTask()
 }
 
 
-
 void ToDoList::markDone()
 {
 	string input = "";
@@ -278,7 +277,6 @@ void ToDoList::markDone()
 		}
 	}
 }
-
 
 
 void ToDoList::updateTasks()
@@ -322,6 +320,68 @@ void ToDoList::displayTasks()
 	}
 }
 
+
+void ToDoList::filterTasks()
+{
+	int filterType;
+	cout << "Enter 1 to filter out all the starred tasks" << endl;
+	cout << "Enter 2 to filter out all the tasks with due dates" << endl;
+	cout << "Enter your choice here:  ";
+	cin >> filterType;
+
+	cout << endl; // separation
+
+	bool found = false; // Flag to check if any tasks match the filter
+
+	switch (filterType)
+	{
+	case 1: // Filter out all the starred tasks
+	{
+		cout << "Starred Tasks:" << endl;
+
+		for (Task& t : this->m_TasksList)
+		{
+			if (t.m_Stared)
+			{
+				t.display_task();
+				found = true;
+			}
+		}
+
+		if (!found)
+		{
+			cout << "No starred tasks found." << endl;
+		}
+
+		break;
+	}
+	case 2: // Filter out all the tasks with due date
+	{
+		cout << "Tasks with Due Date:" << endl;
+
+		for (Task& t : this->m_TasksList)
+		{
+			if (t.m_DueDate != "No due date")
+			{
+				t.display_task();
+				found = true;
+			}
+		}
+
+		if (!found)
+		{
+			cout << "No tasks with due dates found." << endl;
+		}
+
+		break;
+	}
+	default:
+	{
+		cout << "Invalid filter type choice" << endl;
+		break;
+	}
+	}
+}
 
 
 void ToDoList::clearTasks()
@@ -382,6 +442,10 @@ void ToDoList::runApp()
 			this->displayTasks();
 		}
 		else if (choice == 6)
+		{
+			this->filterTasks();
+		}
+		else if (choice == 7)
 		{
 			this->clearTasks();
 		}
