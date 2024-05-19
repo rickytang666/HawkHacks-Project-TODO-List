@@ -1,61 +1,52 @@
 # RicFinity To-Do List Applet
+A console-based to-do list application built with C++.
 
-## 1. Description
+## Table of Contents
+1. Description
+    - What does it do?
+    - Technologies Used
+    - Challenges Faced
+    - Future Improvements
+2. Installation
+3. Usage
+4. Contributing
+5. Credits
+6. License
 
-### 1.1 What does it do?
+## Description
 
-This is a great console-based to-do list I made. You can record tasks you want yourself to complete. As well, you can set the importance and due date for every task. Moreover, the applet provides modify and deletion for users.
+### What does it do?
+This application allows users to record tasks they want to complete. Users can set the importance and due date for every task. The application also provides options for modifying and deleting tasks.
 
-### 1.2 Technologies I used
+### Technologies Used
+- **Coding Language**: C++
+- **Development Platform**: Microsoft Visual Studio Community 2022
+- **Source Control**: Git & GitHub
 
-Coding Language: **C++**
+### Challenges Faced
+One of the main challenges was validating the date inputs from users. Initially, string manipulations were used, but this approach caused many errors. The algorithm was later changed to use mathematical checks, which proved to be significantly better.
 
-- I used this language because this is the primary language for myself. Also, this language is pretty fast and works well with console-based programs.
+### Future Improvements
+- Add databases or files to store the data so that the tasks will remain there even if the application is closed.
+- Allow tasks to have subtasks.
+- Add collaboration functions for sharing tasks.
+- Add reminder functions using libraries to handle date and time calculations.
 
-Development platform I used: **Microsoft Visual Studio Community 2022**
+## Installation
+The easiest way to run the application is by downloading the executable file via the following path: HawkHacks Project TODO List/x64/Debug/HawkHacks Project TODO List.exe
 
-- This is a great IDE. The code editor is my favorite, and I have been using it since I first encounter computer science.
+## Usage
+Open the application to see a control menu. Each operation can be accomplished by entering the appropriate number. You need to create at least one task to make any other operations possible. When creating a task, be careful with the data entry or you will not be able to create one.
 
-Source Control: **Git & GitHub**
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or create an issue.
 
-- These tools make me manage my project very well. They give me chances to "regret" and modify my errors.
+## Credits
+Author: Ruiqi (Ricky) Tang (he/him) \
+Created this applet on May 17th, 2024 \
+All Rights Reserved \
+LinkedIn: [Ruiqi Tang](https://www.linkedin.com/in/ruiqi-tang-04a16a2a2/) \
+GitHub Profile: [rickytang666](https://github.com/rickytang666)
 
-### 1.3 Challenges I faced
-
-When checking the date validity of the users' inputs, I used string manipulations for my approaches. But that method caused many errors, so then after almost a day, I changed my algorithm to checking using math and that method was significantly better.
-
-### 1.4 Features I hope to add in future
-
-- I hope to add databases or files to store the data so that the tasks will remain there even if the applet is closed
-- I want to let the tasks have subtasks, which are the steps to complete a single task
-- I want to add collaboration functions so that users can keep their data on the cloud drive and they can share the tasks. This is especially good for a hackathon, a science project, and so on.
-- Add reminder functions. This could be done by using libraries to hold the dates and times calculations.
-
-## 2. How to run the applet
-
-The easiest way to do so is by downloading the application file via the following path: HawkHacks Project TODO List/x64/Debug/HawkHacks Project TODO List.exe
-
-Then, run the application on the computer, and enjoy!
-
-## 3. How to use the applet
-
-- Open the application, and you can see a control menu. You have to accomplish each operation by entering the appropriate number
-- You need to create at least one task to make any other operations possible
-  - when creating a task, be careful with the data entry or you will not be able to create one
-- A normal task has a bullet sign while an important task (starred task) has a star sign
-- If you don't like a task, you can modify it; and if you think it's totally useless, you can delete it
-- Every time you complete your task, you can mark it as done. Then, the task's status sign will change from cross to checkmark.
-- The tasks inside the program are sorted from most important and most urgent to least important to least urgent.
-- You can filter out all the starred tasks or all the tasks with due dates.
-
-## 4. Credits
-
-Author: Ruiqi (Ricky) Tang (he/him)
-
-Created this applet on May 17th, 2024
-
-All Rights Reserved
-
-LinkedIn: https://www.linkedin.com/in/ruiqi-tang-04a16a2a2/
-
-GitHub Profile: https://github.com/rickytang666
+## License
+MIT
