@@ -5,10 +5,12 @@ ToDoList::ToDoList()
 
 }
 
+
 ToDoList::~ToDoList()
 {
 	cout << "See you again. I hope you enjoyed my To-do list :)" << endl;
 }
+
 
 void ToDoList::showMenu()
 {
@@ -149,6 +151,7 @@ void ToDoList::deleteTask()
 }
 
 
+
 void ToDoList::modifyTask()
 {
 	string input = "";
@@ -286,24 +289,40 @@ void ToDoList::updateTasks()
 
 void ToDoList::displayTasks()
 {
-
 	if (!this->m_TasksList.empty())
 	{
 		cout << "In total there are " << this->m_TasksList.size() << " tasks in your list" << endl;
-
 		cout << endl;
 
+		// Separate the uncompleted and completed tasks
+
+		cout << "Uncompleted Tasks:" << endl;
 		for (Task& t : this->m_TasksList)
 		{
-			t.display_task();
+			if (!t.m_Completed)
+			{
+				t.display_task();
+			}
+		}
+
+		cout << "----------------------------------------" << endl;
+
+		cout << "Completed Tasks:" << endl;
+		for (Task& t : this->m_TasksList)
+		{
+			if (t.m_Completed)
+			{
+				t.display_task();
+			}
 		}
 	}
 	else
 	{
 		cout << "Your list is empty" << endl;
 	}
-
 }
+
+
 
 void ToDoList::clearTasks()
 {
